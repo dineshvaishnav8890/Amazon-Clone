@@ -1,5 +1,4 @@
 name: Amazon Clone
-
 on:
   push:
     branches:
@@ -22,3 +21,9 @@ jobs:
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync . s3://dinesh-amazon-clone1 --delete
+
+    - name: List files in S3 bucket
+      run: aws s3 ls s3://dinesh-amazon-clone1 --recursive
+
+    - name: Download specific artifact from S3
+      run: aws s3 cp s3://dinesh-amazon-clone1/path/to/your/artifact ./local-artifact-location
