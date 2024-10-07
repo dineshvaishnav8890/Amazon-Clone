@@ -26,4 +26,4 @@ jobs:
       run: aws s3 ls s3://dinesh-amazon-clone1 --recursive
 
     - name: Download specific artifact from S3
-      run: aws s3 cp s3://dinesh-amazon-clone1/artifect/ ./local-artifact-location
+      run: aws s3 cp s3://dinesh-amazon-clone1/artifect/
