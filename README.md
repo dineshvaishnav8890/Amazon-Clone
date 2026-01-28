@@ -148,6 +148,6 @@ S3 → Bucket → Properties → Static Website Hosting
 
 Website URL:
 
-http://task-8-github-actions-s3.s3-website-ap-south-1.amazonaws.com
+(http://blog.dinesh.icu.s3-website.ap-south-1.amazonaws.com/)
 
 
